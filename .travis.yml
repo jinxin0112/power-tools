@@ -3,11 +3,11 @@ language: node_js
 node_js: stable
 # S: Build Lifecycle
 install:
-  - npm install
+  - yarn install
 #before_script:
 # - npm install -g gulp
 script:
-  - npm run build
+  - yarn run build:h5
 after_script:
   - cd dist
   - git init
