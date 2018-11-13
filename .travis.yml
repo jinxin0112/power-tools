@@ -10,6 +10,7 @@ script:
   - yarn run build:h5
 after_script:
   - cd dist
+  - echo 'https://jinxin0112.github.io/power-tools/' > CNAME
   - git init
   - git config user.name "jinxin0112"
   - git config user.email "m18508218948@163.com"
