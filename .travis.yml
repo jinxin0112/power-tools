@@ -3,11 +3,11 @@ language: node_js
 node_js: stable
 # S: Build Lifecycle
 install:
-  - npm install
-#before_script:
-# - npm install -g gulp
+  - yarn install
+before_script:
+  - yarn global add @tarojs/cli
 script:
-  - npm run build:h5
+  - yarn run build:h5
 after_script:
   - cd dist
   - git init
